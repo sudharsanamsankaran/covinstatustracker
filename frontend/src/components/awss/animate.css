@@ -1,0 +1,86 @@
+@keyframes slide-right1 {
+    0% {
+            transform: translateX(0);
+    }
+    100% {
+              transform: translateX(200px);
+    }
+  }
+  @keyframes slide-right2 {
+    0% {
+            transform: translateX(0);
+    }
+    100% {
+              transform: translateX(400px);
+    }
+  }
+  @keyframes slide-right3 {
+    0% {
+            transform: translateX(0);
+    }
+    100% {
+              transform: translateX(600px);
+    }
+  }
+
+  .txt {
+	-webkit-animation: vibrate-1 0.3s linear infinite both;
+	        animation: vibrate-1 0.3s linear infinite both;
+}
+
+@keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+.img1{
+  -webkit-animation: slide-right 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-right1 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both ;
+}
+.img2{
+    -webkit-animation: slide-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+              animation: slide-right2 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  .img3{
+    -webkit-animation: slide-right 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+              animation: slide-right3 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+
+
+
+  @keyframes rotate-90-cw {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+    }}
+
+    .icon{
+        animation: rotate-90-cw 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+
+    }
